@@ -45,7 +45,6 @@ class Follower(Base):
     user_to_id = Column(Integer, ForeignKey('User.id'))
     pass
 
-## Draw from SQLAlchemy base
 try:
     result = render_er(Base, 'diagram.png')
     print("Success! Check the diagram.png file")
